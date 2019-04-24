@@ -1,0 +1,87 @@
+<div class="content">
+  <h1>
+    Angular met à disposition différents outils permettant un traitement facilité et dynamique des données :
+  </h1>
+  <hr>
+  <article>
+    <h2># L'interpolation &nbsp; &#123; &#123; &nbsp; &nbsp; &#125; &#125; :</h2>
+    <p>Elle permet de transmettre des attributs de la classe .ts du component vers son template .html</p>
+    <img src="assets/img/interpolation.png" alt="capture interpolation">
+    <h2>Résultat :</h2>
+    <div class="exemple">
+      <!-- Utilisation des attributs définis dans le component -->
+      <!-- grâce aux emplois des accolades {{ }} -->
+      <h3><span>{{ titre }}</span></h3>
+      <p>
+        pseudo : <span>{{ pseudo }}</span> <br>
+        matricule : <span>{{ matricule }}</span>
+      </p>
+    </div>
+  </article>
+  <hr>
+  <article>
+    <h2># Le Property Binding (ou liaison par propriété) &nbsp; [ &nbsp; &nbsp;] :</h2>
+    <p>Il permet de passer en valeur d'un attribut html un attribut ou une méthode de la classe du composent
+      correspondant :</p>
+
+    <img src="assets/img/propertyBinding.png" alt="capture property binding">
+    <h2>Résultat :</h2>
+    <div class="exemple">
+      <!-- Les valeurs des attributs 'required' et 'disabled' sont définis par 
+           l'attribut 'isRequired' et la méthode 'disable()' définis dans dynamique.component.ts
+           grâce à l'emploi des crochets [ ] -->
+      <form>
+        <label for="">
+          Votre pseudo : <input type="text" value="pseudo" [required]="isRequired">
+
+          <input type="submit" value="Enregister" [disabled]="disable()">
+        </label>
+      </form>
+    </div>
+  </article>
+  <hr>
+  <article>
+      <h2># L' Event Binding (ou liaison par évènement) &nbsp; ( &nbsp; &nbsp;) :</h2>
+      <p>Ce binding permet, cette fois, de modifier des éléments de la classe du composant en réaction à un évènement produit sur le DOM :</p>
+      <strong>!!! Remarque: par convention, les méthodes appelées grâce à l'event Binding auront un nom qui commencera par 'on' (ex.: onChange) !!!</strong>
+      <img src="assets/img/eventBinding.png" alt="capture event binding">
+      <h2>Résultat :</h2>
+      <div class="exemple">
+        <!-- les évènements 'click' sur le bouton, et 'change' sur l'input 
+             vont déclencher des méthodes définies dans la classe du composent -->
+        <label for="">{{ buttonStatus }} : <input type="button" value="Cliquez moi" (click)="onClickButton()"></label>
+        <br><br>
+        <label for="">Un input text : <input type="text" [value]="inputValue" (change)="onChangeInput()"></label>
+      </div>
+    </article>
+    <hr>
+    <article>
+        <h2># Le Two-Way Binding (ou liaison à double sens) &nbsp; [( &nbsp; &nbsp;)] :</h2>
+        <p>Ce binding permet d'aller du  HTML vers le TS <strong><u> ET</u></strong>  du TS vers l'HTML </p>
+        <strong>!!! Remarque: pour fonctionner, il nécessite l'import de 'FormsModule' de '@angular/forms' dans 'app.module.ts' (ou dans le module en cours) !!!</strong>
+        <img src="assets/img/importFormsModule.png" alt="capture formsModule ">
+        <img src="assets/img/twoWayBinding.png" alt="capture two-way binding">
+        <h2>Résultat :</h2>
+        <div class="exemple">
+          <!-- en tapant dans l'input, on modifie l'attribut dans la classe du component 
+               qui alors retourne une nouvelle valeur au template -->
+          <p>Démo two-way binding : {{ attTWBinding }}</p>
+
+          <input type="text" [(ngModel)]="attTWBinding">
+        </div>
+      </article>
+      <hr>
+      <article>
+          <h2># Les propriétés personnalisées &nbsp; @Input( &nbsp;) :</h2>
+          <p>Elles permettent, via l'appel du composent (<em>&lt;app-unComposant&gt;&lt;/app-unComposant&gt;</em>) dans le componant parent de faire passer des attributs définis dans le component parent au component enfant : <br>
+            <em>&lt;app-unComposant attributPasséAuComposantEnfant="unAttributDuComponentParent&gt;&lt;/app-unComposant&gt;</em></p><br>
+          <strong>!!! Remarque: ne pas oublier, dans la classe enfant, d'importer 'Input' !!!</strong><br>
+          <img src="assets/img/@inputParent.png" alt="capture inputParent ">
+          <img src="assets/img/@inputEnfant.png" alt="capture inputEnfant">
+          <h2>Résultat :</h2>
+          <div class="exemple">
+            <p>Voir le magnifique footer présent ci-dessous ;)</p>
+          </div>
+        </article>
+        <hr>
+</div>

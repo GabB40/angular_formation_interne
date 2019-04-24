@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'initiation';
+
+  mentionsLegales:string = "Une chose fastidieuse à rédiger et à lire...";
 }

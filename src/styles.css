@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* ce que l'on tape ici sera appliqué à l'ensemble du projet */
+
+/* EXEMPLE : */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    width: 86%;
+    background-color: rgb(238, 226, 204);
+    color: #DD0031;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+h1, h2{
+    color: #C3002F;
+    text-decoration: underline;
+    font-family: 'Oswald', sans-serif;
+}
+h2{
+    font-size: 1.2em;
+}
+hr{
+    color:white;
+    margin: 3em 0;
+}
+.content{
+    text-align: center;
+}

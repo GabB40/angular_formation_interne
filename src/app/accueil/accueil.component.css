@@ -1,0 +1,31 @@
+ol li{
+    padding: 10px;
+}
+em{
+    color: #333;
+    padding-left: 20px;
+}
+section{
+    margin-bottom: 4rem;
+}
+section>h1{
+    background-color: #C70431;
+    color: whitesmoke;
+    padding: 1em;
+    width: 60%;
+    margin: 2em auto;
+    border-radius: 10px;
+}
+img{
+    margin: 1em;
+}
+aside{
+    width: 60%;
+    margin: auto;
+    padding: 2em;
+    border: 1px double #C3002F;
+    background-color: rgb(243, 234, 217);
+}
+aside hr{
+    margin: 30px;
+}

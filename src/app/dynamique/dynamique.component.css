@@ -1,0 +1,16 @@
+.exemple{
+    width: 60%;
+    margin: auto;
+    padding: 2em;
+    border: 1px double #C3002F;
+    background-color: rgb(243, 234, 217);
+}
+.exemple span{
+    color: orange;
+}
+img{
+    margin: 2em 0;
+}
+em{
+    color: #333;
+}

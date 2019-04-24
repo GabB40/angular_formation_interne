@@ -1,0 +1,55 @@
+<div class="content">
+  <div style="text-align:center">
+    <h1>Initiation au framework <strong>ANGULAR</strong></h1>
+    <img width="300" alt="Angular Logo"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+
+  </div>
+  <section>
+    <h1>Mise en place du framework :</h1>
+    <article>
+      <h2># Description :</h2>
+      <p>Angular est un framework Javascript Front-End, basé sur du TypeScript, et développé par Google.</p>
+      <em>Dernière version au 23/04/2019: </em>
+      <h3> 7.2.13 (12/04/2019)</h3>
+    </article>
+    <hr>
+    <article>
+      <h2># Installation / mise en place :</h2>
+      <p>Installation de l'environnement nécessaire à l'utilisation d'Angular. <br><br> Tapez les lignes de commandes
+        dans une <u> invite de commande en mode administrateur</u> :<br> <i>(dans barre de recherche de windows, taper
+          'cmd' puis, faire clic droit et "Exécuter en tant qu'administrateur")</i></p>
+      <ol>
+        <li><a href="https://nodejs.org/dist/v10.15.3/node-v10.15.3-x64.msi">NodeJS :</a><em> Installer la dernière
+            version LTS</em></li>
+        <li>NPM :<em> npm install -g npm@latest</em></li>
+        <li>ANGULAR/CLI (Command-Lign Interface) : <em> npm isntall -g @angular/cli@latest</em></li>
+      </ol>
+      <aside>
+        <p>Si l'on souhaite intégrer Bootstrap à son projet angular, après l'installation de angular/cli, taper :</p>
+        <em>npm install bootstrap@latest --save <br> (pour la dernière version de bootstrap; sinon taper
+          boostrap@n°VersionSouhaitée) </em><hr>
+          <p>Ne pas oublier de rajouter, dans angular.json, de rajouter dans la partie 'architecte' :</p><em>"styles":["node_modules/bootstrap/dist/css/bootstrap.css",</em><br>
+<img src="assets/img/angular.json_bootstrap.png" alt="capture_angulare.json">
+      </aside>
+    </article>
+    <hr>
+    <article>
+      <h2># Création d'un projet Angular :</h2>
+      <p>Dans un terminal, se placer dans le dossier où l'on souhaite créer son projet et taper :</p>
+      <em>ng new nom-projet</em>
+      <p>Pour lancer ensuite un serveur permettant le lancement du projet, taper :</p>
+      <em>ng serve</em>
+      <p>ou, pour le lancer directement dans une nouvelle fenêtre :</p>
+      <em>ng serve -o</em>
+    </article>
+    <hr>
+    <article>
+      <h2># Création de son premier component/composant Angular :</h2>
+      <p>Dans un terminal, se placer dans le dossier où son projet et taper :</p>
+      <em>ng generate component nomComponent</em>
+      <p>Cela revient au même que de taper, de manière plus courte :</p>
+      <em>ng g c nomComponent</em>
+    </article>
+  </section>
+</div>
