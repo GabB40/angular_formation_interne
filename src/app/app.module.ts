@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { StructureComponent } from './structure/structure.component';
 import { DynamiqueComponent } from './dynamique/dynamique.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DynamiqueComponent } from './dynamique/dynamique.component';
     HeaderComponent,
     FooterComponent,
     StructureComponent,
-    DynamiqueComponent
+    DynamiqueComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,

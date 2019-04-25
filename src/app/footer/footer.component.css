@@ -1,4 +1,15 @@
-p{
-    text-align: center; 
-    color: teal;
-} 
+footer{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: #333;
+    color: wheat;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+ul li{
+    list-style: none;
+}
